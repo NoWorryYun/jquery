@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="./assets/js/jquery/jquery-1.12.4.js"></script>
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>jquery 연습</h1>
+
+	<p>제이쿼리 연습 페이지입니다.</p>
+</body>
+
+<script type="text/javascript">
+
+
+//DOM이 생성된 직후 작동됨
+/*
+$(document).ready(function(){
+	console.log("레디");
+	alert("ready");
+});
+*/
+
+//페이지가 로딩된 후 작동됨
+/*
+$(window).load(function(){
+	alert("로드");
+})
+*/
+//이름있는 함수
+/*
+function sum(a, b){
+	return a + b;
+};
+*/
+
+//이름없는 함수
+var act = function(){
+	console.log("로두");
+};
+
+$(window).load(act);
+/*
+act를 굳이 쓸 필요가 없음
+$(window).load(function(){
+	alert("로드");
+})
+*/
+</script>
+
+</html>
